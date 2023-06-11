@@ -4,7 +4,7 @@ import React from "react";
 // import { ITask } from "../interfaces/Task";
 
 // styles
-// import styles from "./TaskForm.module.css";
+import styles from "./TaskForm.module.css";
 
 interface Props {
   btnText: string;
@@ -13,10 +13,9 @@ interface Props {
 const TaskForm = ({btnText}: Props) => {
   
   return (
-    <form>
-      <div>
-        Task Form
-        {/* <label htmlFor="title">Título:</label>
+    <form className={styles.form}>
+      <div className={styles.input_container}>
+        <label htmlFor="title">Título:</label>
         <input
           type="text"
           name="title"
@@ -33,7 +32,7 @@ const TaskForm = ({btnText}: Props) => {
           placeholder="Dificuldade da tarefa (1 a 5)"
         //   value={difficulty}
         //   onChange={handleChange}
-        /> */}
+        />
       </div>
       <input type="submit" value={btnText} />
     </form>
