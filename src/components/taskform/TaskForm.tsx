@@ -8,9 +8,11 @@ import styles from "./TaskForm.module.css";
 
 interface Props {
   btnText: string;
+  taskList: ITask[];
+  setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
 }
 
-const TaskForm = ({btnText}: Props) => {
+const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
   
 
   const [id, setId] = useState<number>(0); 
@@ -19,6 +21,14 @@ const TaskForm = ({btnText}: Props) => {
 
   const addTaskHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const id = Math.floor(Math.random() * 1000);
+
+    const newTask: ITask = { id, title, difficulty };
+    setTaskList!([...taskList, newTask]);
+    setTitle("");
+    setDifficulty(0);
+    
+
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
