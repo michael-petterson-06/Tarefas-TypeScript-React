@@ -1,14 +1,19 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import React from "react";
+import styles from "./App.module.css";
+//Componentes
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
 
 function App() {
 
   return (
     <div>
       <Header/>
-      <div>
-        App
-      </div>
+        <main className={styles.main}>
+          <div>
+            App
+          </div>
+        </main>
       <Footer/>
     </div>
    
