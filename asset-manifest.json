@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tarefas-TypeScript-React/static/css/main.c7343566.css",
+    "main.js": "/Tarefas-TypeScript-React/static/js/main.aea2210f.js",
+    "index.html": "/Tarefas-TypeScript-React/index.html",
+    "main.c7343566.css.map": "/Tarefas-TypeScript-React/static/css/main.c7343566.css.map",
+    "main.aea2210f.js.map": "/Tarefas-TypeScript-React/static/js/main.aea2210f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7343566.css",
+    "static/js/main.aea2210f.js"
+  ]
+}
