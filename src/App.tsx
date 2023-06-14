@@ -54,11 +54,7 @@ function App() {
       <Modal
         title="Editar tarefa"
         children={
-          <TaskForm
-            btnText="Editar"
-            taskList={taskList}
-            task={taskToUpdate}
-            handleUpdate={updateTask}
+          <TaskForm btnText="Editar" taskList={taskList} task={taskToUpdate} handleUpdate={updateTask}
           />
         }
       />
